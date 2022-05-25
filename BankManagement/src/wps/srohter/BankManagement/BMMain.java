@@ -1,7 +1,5 @@
 package wps.srohter.BankManagement;
 
-import wps.srohter.BankManagement.Annotations.ListField;
-
 /**
  * @author Skylar Rohter
  * @return Created JFrame
@@ -9,10 +7,7 @@ import wps.srohter.BankManagement.Annotations.ListField;
  */
 public class BMMain {
     public static void main(String[] args) {
-        CreateJFrame FrameCreator = new CreateJFrame();
+        CreateJFrame FrameCreator = new CreateJFrame(600,600);
         FrameCreator.CreateFrame();
-        if(CreateJFrame.class.isAnnotationPresent(ListField.class)){
-
-        }
     }
 }
